@@ -39,10 +39,11 @@
         }
         function Calculate(){
             try{
-            outputscreen.value = eval(outputscreen.value);
+                console.log(outputscreen.value); // Debug the input value
+                outputscreen.value = eval(outputscreen.value);
             }
             catch(err){
-                alert("Invalid")
+            alert("Invalid");
             }
         }
         function Clear()
